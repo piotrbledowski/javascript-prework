@@ -26,3 +26,15 @@ if(playerInput == '2'){
 
   if(playerInput == '3'){
     computerMove = 'nożyce';
+
+    if( computerMove == 'kamień' && playerMove == 'papier'){
+        printMessage('Ty wygrywasz!');
+      }
+
+      if( computerMove == 'kamień' && playerMove == 'nożyce'){
+        printMessage('Ty przegrywasz!');
+      }
+
+      if( computerMove == 'kamień' && playerMove == 'kamień'){
+        printMessage('Remis!');
+      }
