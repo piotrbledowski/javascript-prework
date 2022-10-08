@@ -16,4 +16,13 @@ if(playerInput == '2'){
     computerMove = 'nożyce';
   }
 
-printMessage('Twój ruch to: ' + playerMove);
+  let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+
+  console.log('Gracz wpisał: ' + playerInput);
+
+  if(playerInput == '2'){
+    computerMove = 'papier';
+  }
+
+  if(playerInput == '3'){
+    computerMove = 'nożyce';
