@@ -1,3 +1,5 @@
+function playGame(){
+
 console.log('moves:', argComputerMove, argPlayerMove);
 
 function getMoveName(argMoveId){
@@ -67,3 +69,4 @@ function argComputerMove(argPlayerMove){
           printMessage('Tym razem przegrywasz :(');
         }
       }
+    }
