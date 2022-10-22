@@ -1,4 +1,4 @@
-function playGame(){
+function playGame(1 || 2 playerInput){
 
 console.log('moves:', argComputerMove, argPlayerMove);
 
@@ -7,7 +7,9 @@ function getMoveName(argMoveId){
       return 'kamień';
     }
 
+    /*
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+*/
 
 console.log('Gracz wpisał: ' + playerInput);
 
@@ -70,3 +72,28 @@ function argComputerMove(argPlayerMove){
         }
       }
     }
+    playGame(3);
+
+    function buttonClicked(){
+      playGame('Guzik Kamień został kliknięty');
+    }
+    
+    let testButton = document.getElementById('Kamień');
+    
+    testButton.addEventListener('click', buttonClicked);
+
+    function buttonClicked(){
+      playGame('Guzik Papier został kliknięty');
+    }
+    
+    let testButton = document.getElementById('Papier');
+    
+    testButton.addEventListener('click', buttonClicked);
+
+    function buttonClicked(){
+      playGame('Guzik Nożyce został kliknięty');
+    }
+    
+    let testButton = document.getElementById('Nożyce');
+    
+    testButton.addEventListener('click', buttonClicked);
